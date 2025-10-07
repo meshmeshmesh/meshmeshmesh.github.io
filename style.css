@@ -8,6 +8,8 @@ body {
   font-family: "EB Garamond", serif;
   line-height: 1.6;
   background: #ffffff;
+  padding-top: 5%;
+  padding-right: 5%;
 }
 
 mark {
@@ -19,14 +21,13 @@ p {
   text-align: justify;
 }
 
-/* Left column stays fixed */
 .left {
   position: fixed;
   top: 0;
   left: 0;
   width: 40vw;
   height: 100vh;
-  padding: 20px;
+  padding: 5%;
 }
 
 .right {
