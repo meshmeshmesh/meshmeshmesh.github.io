@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "EB Garamond", serif;
+  line-height: 1.6;
+  background: #ffffff;
+}
+
+mark {
+  font-size: large;
+}
+
+p {
+  padding-bottom: 10px;
+  text-align: justify;
+}
+
+/* Left column stays fixed */
+.left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40vw;
+  height: 100vh;
+  padding: 20px;
+}
+
+.right {
+  margin-left: 40vw; /* same width as left column */
+  padding: 20px;
+}
