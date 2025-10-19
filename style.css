@@ -34,3 +34,26 @@ p {
   margin-left: 40vw; /* same width as left column */
   padding: 20px;
 }
+
+@media (max-width: 1250px) {
+
+  body {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+  }
+
+  .left {
+    position: static; /* remove fixed positioning */
+    width: 100%;
+    height: auto; /* let it size to content */
+    background-color: var(--background_1);
+    border: 2.5px dashed var(--background_2);
+    padding-bottom: 10px;
+  }
+
+  .right {
+    margin-left: 0; /* remove offset */
+    width: 100%;
+    height: auto; /* let content decide height */
+  }
+}
