@@ -8,7 +8,7 @@ body {
   font-family: "EB Garamond", serif;
   line-height: 1.6;
   background: #ffffff;
-  padding-top: 2.5%;
+  padding-top: 20px;
   padding-right: 5%;
 }
 
@@ -27,11 +27,50 @@ p {
   left: 0;
   width: 40vw;
   height: 100vh;
-  padding: 5%;
+  padding: 4%;
+  padding-top: 20px;
+}
+
+.left p {
+  text-align: justify;
+  word-break: break-word;
+}
+
+.logo-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: block;  
+  padding-top: 20px;   
+  width: 100%;       
+  height: auto;        
+  flex-shrink: 1;     
+  min-height: 0;      
+  object-fit: contain;
+}
+
+.logo-credit {
+  position: absolute; 
+  bottom: 10px;       
+  left: 10px;       
+  z-index: 10;        
+  font-size: 0.75rem;
+  color: #ffffff;             
+  background: rgba(0, 0, 0, 0.5);
+  padding: 4px 8px;           
+  border-radius: 4px;         
+  pointer-events: none;       
 }
 
 .right {
-  margin-left: 40vw; /* same width as left column */
+  margin-left: 40vw;
   padding: 20px;
 }
 
@@ -39,21 +78,22 @@ p {
 
   body {
     display: flex;
-    flex-direction: column; /* stack vertically */
+    flex-direction: column;
   }
 
   .left {
-    position: static; /* remove fixed positioning */
+    position: static;
     width: 100%;
-    height: auto; /* let it size to content */
+    height: auto;
     background-color: var(--background_1);
     border: 2.5px dashed var(--background_2);
     padding-bottom: 10px;
+    text-align: center;
   }
 
   .right {
-    margin-left: 0; /* remove offset */
+    margin-left: 0;
     width: 100%;
-    height: auto; /* let content decide height */
+    height: auto;
   }
 }
